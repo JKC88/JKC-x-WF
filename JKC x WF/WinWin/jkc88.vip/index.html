@@ -1,0 +1,88 @@
+<html>
+
+<!-- Mirrored from bk8champion.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Mar 2025 04:39:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta id="meta-viewport" name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link href="images/favicon.html" rel="icon" type="image/x-icon">
+    <title>BK8</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <!--<meta property="og:title" content="BK8" />-->
+    <!--<meta property="og:description" content="BK8" />-->
+    <!--<meta property="og:type" content="website" />-->
+    <!--<meta property="og:url" content="https://bk8superwin2.com/" />-->
+    <!--<meta property="og:image" content="" />-->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/custom349e.css?v=1726723320">
+    
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="video-container" class="mobile-gif">
+            <div onclick="toggleMute('en_video', this)" class="position-absolute end-0 top-0" style="z-index: 1;">
+        		<i class="fa-solid fa-volume-xmark text-white py-2 px-3 muteMusic"></i>
+        	</div>
+	
+            <video id="en_video" autoplay muted loop playsinline>
+                <source src="video/video_cn_v2.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split("&"),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split("=");
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined
+                    ? true
+                    : decodeURIComponent(sParameterName[1]);
+            }
+        }
+        return false;
+    };
+    const affid = getUrlParameter("affid");
+
+    var moneysiteUrl = `https://www.bk8biggest98.com/zh-my/register?affid=`;
+
+    var linksEN = `${moneysiteUrl}`;
+
+    $("#en_video, #en_desktop").click(function () {
+        window.open(linksEN, "_blank");
+    });
+
+  });
+  
+    function toggleMute(id, element) {
+        var selectedVideo = document.getElementById(id);
+        var muteIcon = element.querySelector(".muteMusic");
+    
+        selectedVideo.muted = !selectedVideo.muted;
+    
+        if (selectedVideo.muted) {
+            muteIcon.className = "fa-solid fa-volume-xmark text-white py-2 px-3 muteMusic";
+        } else {
+            muteIcon.className = "fa-solid fa-volume-high text-white py-2 px-3 muteMusic";
+        }
+    }
+</script>
+
+<!-- Mirrored from bk8champion.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Mar 2025 04:39:36 GMT -->
+</html>
