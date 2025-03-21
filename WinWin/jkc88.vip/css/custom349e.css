@@ -1,0 +1,51 @@
+body {
+  margin: 0; }
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mobile-gif {
+  height: 724px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.mobile-gif video {
+    object-fit: cover;
+  /*width: auto;*/
+  height: 100%; 
+}
+
+.desktop-gif {
+  height: 724px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #main {
+    /* height: 100%; */
+    background-color: #0b1f50;
+    display: block; 
+  }
+
+  .mobile-gif {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* padding-bottom: 56.25%;  */
+  }
+    
+  .mobile-gif video {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  } 
+}
